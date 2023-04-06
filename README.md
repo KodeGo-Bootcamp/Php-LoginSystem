@@ -33,7 +33,7 @@
 
 ## TEAM CONTRIBUTORS and CONTRIBUTIONS:
 
-1. Member name 1
+1. Rodrigo Bonzerr S. Lopez: Overall Course design, Creation of Project Documentation Template.
 2. Member name 2
 3. Member name 3
 4. Member name 4
@@ -77,6 +77,8 @@
 3.
 4.
 5.
+
+
 
 
 
