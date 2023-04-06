@@ -28,6 +28,7 @@
 1. HTML , CSS, and Javascript
 2. PHP Object Oriented Programming
 3. MYSQLi For Database
+4. BEM for css class name convention
 
 
 ## TEAM CONTRIBUTORS and CONTRIBUTIONS:
