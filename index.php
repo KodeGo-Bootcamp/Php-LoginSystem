@@ -140,10 +140,42 @@
         </ul>
 
         <h2>Pseudo-Types</h2>
+
+    </section>
+
+    <section>
+        <h2>String data types</h2>
+            <ul>
+                <li>Single quotes</li>
+                <li>Double quotes</li>
+            </ul>
+            <p>It is importnat to take note of cancelling out double quotes in sie of our double quotes</p>
         
+        
+        <?php
+            //"SELECT person WHERE name= 'Rodrigo' ASC"
+            
+            // INCORRECT
+            //echo 'I'm learning how to work with strings in PHP!!!!';
+            
+            echo "I'm learning how to work with strings in PHP!!!! This is printed out with double quotes.";
+            echo '<br>';
+            echo 'I\'m learning how to work with strings in PHP!!! This is printed out with single quotes with escape character.';
 
+        ?>
 
-
+            <hr>
+        <h2>Integer Data Types</h2>
+        <?php
+           echo 20 . " This is an integer data type."; // this is  a integer data type in php
+            echo "<br>";
+           echo "20" . " This is a string data type." ; // this is a string data type in php 
+           echo "<br>";
+           echo "<p>'10' is not equal to 10 in PHP.</p>";
+           if ("10" == 10){
+              echo "This is not the same data type!";
+           }
+        ?>
 
     </section>
 
