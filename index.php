@@ -21,19 +21,46 @@
         </div>
     </header>
     <section>
+        <h2>REACT SECTION</h2>
+        
+        <div id="mydiv"></div>
+
+    </section>
+    <br>
+    <section>
         <h2>WHAT IS PHP?</h2>
         <ul>
             <li>PHP is an acronmy for Hypertext Preprocessor.</li>
             <li>It is widely used and an open source scripting language.</li>
             <li>PHP scripts are executed on the server.</li>
             <li>PHP is free to download and use.</li>
-            
-        </ul>
+            <li>It is a powerful scripting language that it is used by the biggest blogging system on the web - WordPress!!</li>
 
-        
+        </ul>
+        <hr>
+
+        <hr> 
+
+        <h2>Two common types of programming pardigm that you will encounter</h2>
+        <ol>
+            <li>Procedural Programming</li>
+            <li>Object Oriented Programming</li>
+        </ol>
+
+        <hr> 
+
+        <h2>What can PHP DO?</h2>
+        <li>It can generate dynamic page content</li>
+        <li>It can create, open, read, write, delete and close files on the server.</li>
+        <li>Receive and send cookies</li>
+        <li>Can perform CRUD - CREATE, READ, UPDATE, DELETE in our databse</li>f
+        <li>Setup control user-access</li>
+        <li>Encrypt data</li>
     </section>
 
-    <div id="mydiv"></div>
+    <section>
+        
+    </section>
 
     <script type="text/babel">
       function Hello() {

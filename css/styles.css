@@ -6,10 +6,11 @@
 }
 
 body{
-    margin: 2%;
+    margin: 5%;
+    padding: 2rem;
     background-color: lightgreen;
 }
 
 .header{
-    height: 100vh;
+    height: 30vh;
 }
