@@ -85,14 +85,21 @@
 
     <section>
         <h2>Without escaping</h2>
-        <?php
+        <?php // This is an example without escaping
         if(1 == 1){
             echo "<p>This works alright with an if statement!</p>";
         }
         ?>
 
         <h2>With escaping examples</h2>
+
+        
         <?php
+        /*
+        This is an example of a multi-line 
+        comment in 
+        php.
+        */
          if(1 == 1) { 
         ?>
 
@@ -102,6 +109,42 @@
             }
         ?>
         
+    </section>
+
+    <section>
+        <h2>Scalar data types</h2>
+        <strong>DATA TYPES</strong>
+
+        <strong>NOTE:</strong><p>We have at least 12 PRIMITIVE DATA TYPES</p>
+
+        <h3>Scalar Data Types</h3>
+        <ul>
+            <li>Strings</li>
+            <li>Integers</li>
+            <li>Floats</li>
+            <li>Boolean</li>
+        </ul>
+
+        <h3>Compound</h3>
+        <ul>
+            <li>Array</li>
+            <li>Object</li>
+            <li>Callable</li>
+            <li>Iterable</li>
+        </ul>
+
+        <h2>Special</h2>
+        <ul>
+            <li>Resource</li>
+            <li>NULL</li>
+        </ul>
+
+        <h2>Pseudo-Types</h2>
+        
+
+
+
+
     </section>
 
     <script type="text/babel">
