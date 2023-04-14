@@ -15,7 +15,9 @@
     <header>
         <div class="header">
             <?php 
-                echo "My first PHP Script!";
+                echo 'My first PHP Script with single quotes';
+                echo '<br>';
+                echo "My third PHP Script with single quotes";
             ?>
             
         </div>
@@ -53,12 +55,52 @@
         <li>It can generate dynamic page content</li>
         <li>It can create, open, read, write, delete and close files on the server.</li>
         <li>Receive and send cookies</li>
-        <li>Can perform CRUD - CREATE, READ, UPDATE, DELETE in our databse</li>f
+        <li>Can perform CRUD - CREATE, READ, UPDATE, DELETE in our databse</li>
         <li>Setup control user-access</li>
         <li>Encrypt data</li>
     </section>
 
+    <br>
+    <hr>
     <section>
+        <h2>Two basic ways to get output</h2>
+        <ul>
+            <li>echo statement</li>
+            <li>print statement</li>
+        </ul>
+        <p>
+            Hi, this is a paragraph content inside a paragraph element. 
+        </p>
+        <?php
+            echo "Hello world, I'm Rod!!!";
+            echo '<br>';
+            echo "This is also a paragraph inside of a php tag";
+            echo "<br>";
+            echo "<br>";
+            echo "<p>This is another <b>paragraph</b> that got displayed inside php tags.</p>";
+        ?>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Without escaping</h2>
+        <?php
+        if(1 == 1){
+            echo "<p>This works alright with an if statement!</p>";
+        }
+        ?>
+
+        <h2>With escaping examples</h2>
+        <?php
+         if(1 == 1) { 
+        ?>
+
+        <p>This should also work with the implementation of the concept of excaping in PHP!!!</p>
+
+        <?php 
+            }
+        ?>
         
     </section>
 
@@ -67,7 +109,7 @@
         return <h1>Hello World! This is an example of REACT embeded on a php file!</h1>;
       }
       
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+      ReactDOM.render(<Hello />, document.getElementById('mydiv'));
     </script>
 </body>
 </html>
