@@ -218,6 +218,19 @@
         }
         ?>
 
+        <hr>
+        <h2>Declaring Variables</h2>
+        <?php
+        echo "<h3>Rules in declaring variables</h3>";
+        echo "<ul>";
+        echo "<li>Don't start your variable name with a number</li>";
+        echo "<li>A variable name can start with a letter and an underscore</li>";
+        echo "<li>It cannot start with a number</li>";
+        echo "<li>It is Case Sensitive</li>";
+        echo "<li>A variable name can only have alphanumeric characters</li>";
+        echo "</ul>";
+        ?>
+
     </section>
 
     <script type="text/babel">
