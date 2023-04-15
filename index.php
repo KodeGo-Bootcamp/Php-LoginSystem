@@ -4,6 +4,12 @@ include_once 'header.php';
 
     <main>
     <section>
+    <?php 
+                echo 'My first PHP Script with single quotes';
+                echo '<br>';
+                echo "My third PHP Script with single quotes";
+            ?>
+            
         <h2>REACT SECTION</h2>
         
         <div id="mydiv"></div>
