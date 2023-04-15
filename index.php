@@ -231,6 +231,21 @@
         echo "</ul>";
         ?>
 
+        <hr>
+        <?php 
+        print "<h2>Coding Challenge for Variables</h2>";
+
+
+        //Declare a variable and assign value of string data type
+        echo "<p>Declare a variable and assign value of string data type</p>";
+        $name = "Gilbert";
+        echo "I am " . $name;
+
+        //Declare a variable and assign number data type
+        //Declare a variable and assign a boolean data type
+        //Declare a variable and assign float data type
+        ?>
+
     </section>
 
     <script type="text/babel">
