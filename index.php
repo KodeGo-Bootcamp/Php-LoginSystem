@@ -201,6 +201,14 @@
           echo "Unlike with C# we need to define a float: " . '20.5f';
         ?>
 
+        <hr>
+        <h2> Adding Line breaks</h2>
+        <?php 
+        echo "if you view the page source \n you'll find a new line in this string";
+        echo "<br>";
+        echo nl2br("if you view the page source \n you'll find a new line in this string");
+        ?>
+
     </section>
 
     <script type="text/babel">
