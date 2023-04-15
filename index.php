@@ -254,9 +254,126 @@
         echo "<br>";
         $float = 1.1416;
         echo "The float number is" . $float;
+
+        echo "<hr>";
+
+        echo "<h2>CONSTANTS IN PHP</h2>";
+
+
+        CONST PI = 3.14;
+        CONST BALL_HEIGHT = 5;
+        CONST BALL_WIDTH = 5;
+
+        echo PI;
+        echo "<br>";
+        echo "The ball width is " . BALL_WIDTH . ".";
+        echo "<br>";
+        echo "The ball height is " . BALL_WIDTH . ".";
+
+        CONST PLAYER_HEIGHT = 5;
         ?>
 
+
     </section>
+
+    <section>
+        <h2>EXPRESSIONS IN PHP</h2>
+
+        <ul>
+            <li>Operators</li>
+            <li>Conditions</li>
+            <li>Loops</li>
+        </ul>
+
+        <hr>
+        <h2>OPERATORS</h2>
+        <li>Arithmetic Operators</li>
+        <li>Assignment Operator</li>
+        <li>Comparison Operator</li>
+        <li>Increment/Decrement Operators</li>
+        <li>Logical Operators</li>
+        <li>String Operators</li>
+        <li>Array Operator</li>
+        <li>Conditional Assignment Operator</li>
+        <li>Operator Precedence</li>
+        <li>Error control operators</li>
+        <li>Execution control operators</li>
+        <li>Type operators</li>
+        <li>Bitwise operator</li>
+
+        <hr>
+
+        <?php
+        $num1 = 1;
+        $num2 = 2;
+        $sum;
+        $product;
+        $difference;
+        $quotient;
+        
+        echo  "<h3>ARITHMETIC OPERATORS</h3>";
+        $sum = $num1 + $num2;
+        echo $sum;
+        echo "<br>";
+        $product = $num1 * $num2;
+        echo $product;
+        echo "<br>";
+        $difference = $num1 - $num2;
+        echo $difference;
+        echo "<br>";
+        $quotient = $num1 / $num2;
+        echo $quotient;
+
+        ?>
+
+        <hr>
+        <?php 
+        echo  "<h3>ASSIGNMENT OPERATORS</h3>";
+        echo  "<h4>Compound assignment with augmented addition</h3>";
+
+        //$num1 =+ $num2; this will only assign the value of 2 to num1
+
+        $num1 += $num2; // shorthand for $num1 = $num1 + $num2;
+
+
+        // This assignment operator is the same as 1 + 2 which is a shorthand for $num1= $num1 +$num2;
+        echo $num1; // Num 1 now has a value of 3
+        echo "<br>";
+        $num1 = $num1 + $num2;
+        print $num1; // We re-assign the value and added 3 to 2
+        ?>
+
+
+        <?php 
+        echo "<h2>COMPARISON OPERATORS</h2>";
+        $num1 == $num2;
+        $num1 === $num2; 
+        $num1 !== $num2;
+        $num1 < $num2;
+        $num1 > $num2;
+        $num1 <= $num2;
+        $num1 >= $num2;
+        $num1 <=> $num2;
+
+        ?>
+
+        <?php 
+            $num1 = 1;
+            $num2 = "2";
+            $num1 == $num2;
+            $num1 === $num2;
+        ?>
+    </section>
+
+
+    
+
+
+
+    <script>
+         const PLAYER_SPEED = 10;
+        console.log(PLAYER_SPEED);
+    </script>
 
     <script type="text/babel">
       function Hello() {
