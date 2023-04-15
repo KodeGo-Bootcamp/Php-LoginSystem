@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUR FIRST PHP SCRIPT</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<?php
+include_once 'header.php';
+?>
 
-</head>
-<body>
-    <header>
-        <div class="header">
-            <?php 
-                echo 'My first PHP Script with single quotes';
-                echo '<br>';
-                echo "My third PHP Script with single quotes";
-            ?>
-            
-        </div>
-    </header>
+    <main>
     <section>
         <h2>REACT SECTION</h2>
         
@@ -782,7 +763,6 @@
                 }
                 echo $a;
                 echo "<br>";
-
             };
 
 
@@ -791,25 +771,29 @@
         ?>
     </section>
 
-    
+    <section>
+        <h2>INCLUDE AND REQUIRE</h2>
+            <?php 
+            include_once 'includes/test2.php';
+            
+           
+            echo "<br>";
 
 
+            echo $banana;
 
-    
+            ?>
+
+            <?php
+             include_once 'includes/test2.php';
+            ?>
 
 
+     
+    </section>
+        </main>
 
-    <script>
-         const PLAYER_SPEED = 10;
-        console.log(PLAYER_SPEED);
-    </script>
 
-    <script type="text/babel">
-      function Hello() {
-        return <h1>Hello World! This is an example of REACT embeded on a php file!</h1>;
-      }
-      
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'));
-    </script>
-</body>
-</html>
+        <?php
+         include_once 'footer.php';
+        ?>
