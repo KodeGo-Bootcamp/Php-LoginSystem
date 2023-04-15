@@ -347,8 +347,9 @@
         <?php 
         echo "<h2>COMPARISON OPERATORS</h2>";
         $num1 == $num2;
-        $num1 === $num2; 
-        $num1 !== $num2;
+        $num1 === $num2; // Strict not equality operator this should not be performing any coercion 
+        $num1 != $num2; 
+        $num1 !== $num2; // Strict not equality operator
         $num1 < $num2;
         $num1 > $num2;
         $num1 <= $num2;
@@ -359,11 +360,439 @@
 
         <?php 
             $num1 = 1;
-            $num2 = "2";
-            $num1 == $num2;
-            $num1 === $num2;
+            $num2 = "1"; 
+            //$num1 == $num2;
+            //$num1 === $num2;
+            echo "Variable \$num1 is an example of an integer!";
+            echo "<br>";
+            echo gettype($num1);
+            echo "<br>";
+            echo "Variable \$num2 is an example of a string!";
+            echo "<br>";
+            echo gettype($num2);
+            echo "<br>";
+
+            echo "<p>\$num1 with an assigned value of 1, is not equal to \$num2 with assigned value of '1'</p>";
+            if($num1 !== $num2){
+                echo "This is printed after an if statement as an example of comparing two data types that are strict not equal to one another.";
+            }
+
+            $num3 = "1";
+            $num4 = 4;
+            $num5 = "4";
+            
+            echo gettype($num4);
+            echo gettype($num5);
+            echo "<br>";
+            echo "<br>";
+            if($num4 != $num5){
+                echo "This will not be printed out.";
+            }else{
+                echo "This gets printed because num4 and num5 are not equal to one another.";
+            }
+
+
+            $num6 = 4;
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            
+            echo "<hr>";
+
+            echo "<h3>Greater than or less than comparison operator</h3>";
+
+            $num1 = 1;
+            $num2 = 2;
+            $num3 = 2;
+            $num4 = 4;
+            $num5 = 5;
+            $num6 = 5;
+
+            if ($num1 < $num2){
+                echo "num1 is less than num2";
+            }
+
+            echo "<br>";
+
+            if ($num3 <= $num2){
+                echo "num3 is less than or equal to num2";
+            }
+
+            echo "<br>";
+
+            if($num5 >= $num6){
+                echo "num5 is greater than or equal to num6";
+            }
+            echo "<br>";
+            echo "<br>";
+            echo "<h3>Spaceship comparison operator</h3>";
+
+            $num1 = 1;
+            $num2 = 3;
+            $num3 = 3;
+
+            if($num1 <=> $num2){
+                print "If the one on the right is greater than the number on the left this should return -1.";
+            }; 
+
+            echo "<br>";
+            echo "<br>";
+
+            print($num1<=>$num2);
+
+            echo "<br>";
+            echo "<br>";
+            print($num2<=>$num3); // this should produce a value of 0
+
+            // if($num2 <=> $num3){
+            //     print "If both numbers are equal to one another this should return 0.";
+            // }; 
+            echo "<br>";
+            echo "<br>";
+            echo $num2 <=> $num1; // this should produce a value of positive 1
+
+            echo "<hr>";
+            echo "<h3>Logical Operators : LOGICAL AND &&</h3>";
+
+            $num1 = 5;
+            $num2 = 10;
+
+            if($num1 === 5 and $num2 ===10){
+                echo "This is the AND operator in action";
+                echo "<br>";
+            };
+            
+            if($num1 === 5 && $num2 ===10){
+                echo " This is the && shorthand for the and operator in action";
+                echo "<br>";
+            };
+
+
+            echo "<h3>Logical Operators : LOGICAL OR ||</h3>";
+
+            
+            if($num1 === 5 OR $num2 ===10){
+                echo "This is the OR operator in action";
+                echo "<br>";
+            };
+            
+            if($num1 === 1 || $num2 === 10){
+                echo " This is the || shorthand for the OR operator in action";
+                echo "<br>";
+            };
+
+
+            echo "<hr>";
+
+
+            echo "<h3>Logical Operators : LOGICAL XOR</h3>";
+
+            $num1 = 10;
+            $num2 = 20;
+            $num3 = 5;
+            $num4 = 6;
+
+            if ($num1 === 10 XOR $num2 ===5){
+                $result = $num1 === 10 xor $num2 ===5;
+                echo "<br>";
+                echo "<br>";
+
+                echo "true XOR false";
+                echo "<br>";
+
+                echo "If one of these value are true display this text.";
+                echo "<br>";
+                echo $result ? "true" : "false";
+            };
+
+            echo "<h3>Logical Operators : NOT EQUAL</h3>";
+
+            $num1 = 100;
+
+            var_dump($num1 !== 100);
+            echo "<br>";
+            var_dump($num1);
+
+
+            echo "<br>";
+            echo "<br>";
+
+
+            echo "<hr>";
+
+            echo "<h2>INCREMENT AND DECREMENT</h2>";
+
+            $num1 = 9;
+            //$num1++;
+            //var_dump($num1++);
+            
+            ++$num1;
+            var_dump(++$num1);
+            
+
+            $num1 = 9;
+            $num1--;
+            var_dump($num1--);
+            
+            //--$num1;
+            //var_dump(--$num1);
+            
+
+            echo "<h2>STRING OPERATORS</h2>";
+
+            $a = "My name ";
+            $b = "is Rodrigo! ";
+            $c = $a . $b;
+            echo "<br>";
+            echo "<br>";
+            
+            echo $a;
+            
+            echo "<br>";
+            echo "<br>";
+
+            echo $b;
+            
+            echo "<br>";
+            echo "<br>";
+
+            echo $c;
+
+            echo "<br>";
+            echo "<br>";
+            $g = "My name is ";
+            $h = $g . ' Rodrigo Lopez!';
+
+            echo $h;
+
+            
+
+
+
+            
+        ?>
+
+
+    </section>
+    <hr>
+    <section>
+    <h2>CONTROL STRUCTURES</h2>
+
+    <?php
+        echo "<h3>CONDITIONAL STATEMENTS</h3>";
+
+        echo "<h4>IF CONDITIONAL STATEMENTS</h4>";
+        /*
+        if(){
+            // code
+        };
+        */
+
+        echo "if(condition){";
+        echo "<br>";
+        echo "//code";
+        echo "<br>";
+        echo "};";
+        echo "<br>";echo "<br>";
+       
+       
+        $a = 20;
+        $b = 5;
+
+        if($a === $b){
+            echo "Variable \$a is the same value with variable \$b.";
+        }elseif($b === 5){
+            echo "Variable \$b is equal to 10";
+        }
+        else{
+            echo "They are NOT the same";
+        }
+
+        echo "<h4>SWITCH CONDITIONAL STATEMENTS</h4>";
+
+        $a = 0;
+        switch($a){ // this is our condition
+            case 50: // Thi sis the first value we check if it is true
+                echo "Variable is equal to 50!!"; // our code that we want to display if the value is true.
+                break; // we add the break statement to add a break to our code when we write our switch cases. 
+            case 100:
+                echo "Variable is equal to 100!";
+                break;
+            default: // this is the same feature as the else statement.
+            echo "Did not find the equal value";
+        }// End of SWTICH STATEMENT.
+
+        echo "<br>";
+        $a = false;
+
+        if($a === true){
+            echo "variable is true!";
+        }
+
+        elseif($a === false){
+            echo "varaible is false!";
+        }
+        
+        echo "<br>";
+        echo "<h4>LOOPSh4>";
+
+        /*
+        $a = 20;
+        $b = 20;
+
+        if($a === $b){
+            echo "These values are the same";
+        }
+
+        */
+
+        echo "<hr>";
+        echo "<h4>WHILE LOOPS</h4>";
+
+        $a = 0;
+        $b = 10;
+
+        while ($a < $b){
+            $a++;
+            echo "Keep looping this!";
+            echo "<br>";
+            echo "<br>";
+            
+        }
+
+        echo "<br>";
+        echo "<br>";
+        echo "<h4>INFINITE LOOP<span style='color: red'>THIS IS BAD!!!</span></h4>";
+
+
+        echo "while (true === true){";
+        echo "<br>";
+        echo "echo 'This will continue to run FOREVER!!!' <span style='color: red'>DONT DO THIS!!!</span> ";
+        echo "<br>";
+        echo "}";
+
+
+        echo "<hr>";
+        echo "<h4>DO WHILE LOOPS</h4>";
+
+        $a = 5;
+        do {
+            echo "Loop number " . $a++;
+            echo "<br>";
+        } while ($a <= 10);
+
+        echo "<br>";
+       
+        echo "<h4>FOR LOOPS</h4>";
+
+        for ($i=0; $i< 20; $i++){
+            echo "This should run 10 times!!!";
+            echo "<br>";
+            echo "<br>";
+        }
+
+        echo "<hr>";
+        
+        echo "<h4>FOREACH LOOPS</h4>";
+        
+        $array = ["Rod",  "Jash", "Don", "Jerome", "Kevin", "Reyna", "Benedict", "Hermart"];
+
+        foreach($array as $value){
+            echo $value;
+            echo "<br>";
+        };
+
+        // ASSOCIATIVE ARRAYS
+        echo "<br>";echo "<br>";
+            $person = [
+                "First Name" => "Rodrigo",
+                "Last Name" => "Lopez",
+                "Eye Color" => "Black"
+            ];
+
+            foreach($person as $key => $value){
+                echo $key . ": " . $value;
+                echo "<br>";
+            }
+
+
+            // First loop we are gtting the First Name key and the Value of Rodrigo
+            // Second loop we are referencing the Last name and the Value of Lopez
+            // We are referencing the Eye Color and the Value of Blue.
+
+
+
+        
+
+    ?>
+
+     
+    </section>
+
+    <section>
+        <?php
+    
+            echo "<h2>BREAK AND CONTINUE STATEMENTS</h2>";
+
+            $a = 1; 
+
+            while ($a <= 10) {
+                if($a === 7){
+                    break;
+                }// end of if statement
+                echo $a++;
+                echo "<br>";
+            }// end of while loop
+
+
+            // NESTED STATEMENTS 
+            echo "<h3>NESTED WHILE LOOP</h3>";
+            echo "<br>";
+            $a = 1; 
+            while ($a++) { // The 
+                echo $a;
+                while ($a >= 10){
+                    break 2; // If you give this break statement a value of 1 it will crash your browser. 
+                    
+                }
+                echo "<br>";
+            }// end of while loop
+
+            echo "<br>";
+
+            echo "<h2>CONTINUE STATEMENTS</h2>";
+
+            // ITERATION meaning
+
+            // When we are doing loops we are having ITERATIONS
+
+            // Each time we LOOP we call that ITERATION
+
+            // BREAK STATEMENT WE ARE STOPPING the LOOP vs the SWITCH STATEMENT we are SKIPPING
+
+            // BREAK = STOP , CONTINUE = SKIP
+
+            $a = 0;
+
+            while($a < 10){
+                $a++;
+                if($a === 5){
+                    continue;
+                }
+                echo $a;
+                echo "<br>";
+
+            };
+
+
+
+
         ?>
     </section>
+
+    
+
 
 
     
