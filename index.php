@@ -240,10 +240,20 @@
         echo "<p>Declare a variable and assign value of string data type</p>";
         $name = "Gilbert";
         echo "I am " . $name;
-
+        echo "<br>";
+        
+        
         //Declare a variable and assign number data type
+        $number = 16;
+        echo "My favorite number is " . $number;
         //Declare a variable and assign a boolean data type
+        echo "<br>";
+        $a = false;
+        echo "The boolean value is" . $a;
         //Declare a variable and assign float data type
+        echo "<br>";
+        $float = 1.1416;
+        echo "The float number is" . $float;
         ?>
 
     </section>
