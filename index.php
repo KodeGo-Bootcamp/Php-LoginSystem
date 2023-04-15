@@ -78,6 +78,14 @@
             echo "<br>";
             echo "<br>";
             echo "<p>This is another <b>paragraph</b> that got displayed inside php tags.</p>";
+
+
+        ?>
+
+        <?php 
+           echo "Print statement can be used with or without () parenthesis";
+           print "Hello world! <br>";
+           print "This is an example of a print statement to display output on the browser";
         ?>
     </section>
 
@@ -165,7 +173,7 @@
         ?>
 
             <hr>
-        <h2>Integer Data Types</h2>
+        <h2>Integer Data</h2>
         <?php
            echo 20 . " This is an integer data type."; // this is  a integer data type in php
             echo "<br>";
@@ -175,6 +183,22 @@
            if ("10" == 10){
               echo "This is not the same data type!";
            }
+        ?>
+
+
+        <h2>Float Data Types</h2>
+        <?php
+          echo 24.5;
+          echo "<br>";
+          echo 10.35;
+          echo "<br>";
+          echo 1000.12345;
+
+
+          //PHP 
+          echo "In PHP we dont need any extra keywords in defining float data types: " . 20.5;
+          echo "<br>";
+          echo "Unlike with C# we need to define a float: " . '20.5f';
         ?>
 
     </section>
