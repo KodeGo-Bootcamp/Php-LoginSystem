@@ -1,0 +1,47 @@
+
+<!-- JUST FOR DEMONSTRATION REASONS
+<?php 
+  // PROCEDURAL    
+  //MODEL
+    // php code
+  //VIEW
+    // php code
+  // CONTROLLER
+    // php code
+?> 
+
+<code>
+  //  EXAMPLES OF OOP
+    index.php 
+<?php
+  Controller.php;
+  Model.php;
+  View.php;
+?>
+
+<?
+Controller.php
+?>
+
+
+<?
+Controller.php
+?>
+
+<?
+Model.php
+?>
+
+<?
+View.php
+?> 
+
+</code>
+-->
+
+
+<?php
+class Fruit{
+    // code goes here...
+}
+?>
