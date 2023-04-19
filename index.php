@@ -66,10 +66,11 @@ to some programming languages. </p>
    echo $apple->getName();
    echo "<br>";
    echo $banana->getName();
-
    // Call using browser when the user clicks on something
    // Call or invoke a funciton inside of our script or code 
 ?>
+
+
 <!-- 
 <script>
     setTimeout(() => {
