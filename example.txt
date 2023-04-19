@@ -45,3 +45,20 @@ class Fruit{
     // code goes here...
 }
 ?>
+
+//ABSTRACTION
+
+// NOT ABSTRACTED
+function testAPI(type){
+    if(type instanceof InitialLoad){
+        //implementation example
+    }else if(type instanceof InitialLoad){
+        //implementation example
+    }else{
+        //implementation example
+    }
+}
+
+// ABSTRACTED
+
+testAPI('www.test.com', HTTPMethod.Get); // Invocation

@@ -78,7 +78,15 @@ to some programming languages. </p>
     }, timeout);
 </script> -->
 
+<?php
+echo "<hr>";
+echo "<h2>FirstClass Example</h2>";
+echo "<br>";
+include_once 'includes/FirstClass.php';
+?>
 
+
+<hr>
 
 </body>
 </html>
