@@ -21,7 +21,7 @@ class Car{
   
 //CREATE An INSTANCE OF THE OBJECT
 $bmw = new Car();
-$bmw->setName('bmw'); // dot syntax
+$bmw->setModel('bmw'); // dot syntax
 
 
 // CONNECT TO index.php

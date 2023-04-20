@@ -95,7 +95,7 @@ include_once 'includes/FirstClass.php';
 include_once 'includes/Construct.php';
 
 // ECHO an instance of CAR OBJECT HERE
-
+echo $bmw->getModel();
 
 
 ?>
