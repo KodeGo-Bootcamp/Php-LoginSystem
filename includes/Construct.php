@@ -7,11 +7,8 @@ class Car{
 
     //METHODS
     // set up a function declaration to set model
-    function setModel($model){
+    function __construct($model, $color){
         $this->model=$model;
-    }
-
-    function setColor($color){
         $this->color=$color;
     }
 
@@ -29,11 +26,7 @@ class Car{
 }
   
 //CREATE An INSTANCE OF THE OBJECT
-$bmw = new Car();
-$bmw->setModel('bmw'); // dot syntax
-
-$red = new Car();
-$red->setColor('red');
-
+$bmw = new Car('bmw');
+$red = new Car('red');
 
 // CONNECT TO index.php
