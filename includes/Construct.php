@@ -6,6 +6,9 @@ class Car{
 
     //METHODS
     // set up a function declaration to set model
+    function setModel($model){
+        $this->model=$model;
+    }
     
     //Refactor this into a constructor
 
