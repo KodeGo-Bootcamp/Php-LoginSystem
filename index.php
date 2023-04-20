@@ -91,6 +91,8 @@ include_once 'includes/FirstClass.php';
 
 <h3>CODING CHALLENGE</h3>
 <?php
+//connection from the Construct.php
+
 
 // ECHO an instance of CAR OBJECT HERE
 
