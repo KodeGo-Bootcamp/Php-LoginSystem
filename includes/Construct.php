@@ -26,7 +26,8 @@ class Car{
 }
   
 //CREATE An INSTANCE OF THE OBJECT
-$bmw = new Car('bmw');
-$red = new Car('red');
+$bmw = new Car('bmw' , 'red');
+// $red = new Car('red');
+
 
 // CONNECT TO index.php
