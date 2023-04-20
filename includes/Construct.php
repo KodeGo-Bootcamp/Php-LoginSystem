@@ -11,7 +11,7 @@ class Car{
         $this->model=$model;
     }
 
-    function setColor($Color){
+    function setColor($color){
         $this->color=$color;
     }
 
@@ -33,7 +33,7 @@ $bmw = new Car();
 $bmw->setModel('bmw'); // dot syntax
 
 $red = new Car();
-$bmw->setColor('red');
+$red->setColor('red');
 
 
 // CONNECT TO index.php
