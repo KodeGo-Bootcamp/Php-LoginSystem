@@ -96,7 +96,7 @@ include_once 'includes/Construct.php';
 
 // ECHO an instance of CAR OBJECT HERE
 echo $bmw->getModel();
-
+echo $red->getColor();
 
 ?>
 
