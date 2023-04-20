@@ -1,4 +1,26 @@
 
+Jeffreey Cawags
+Jerome Ballena
+Regie Marzan
+Aljayve
+Agaspar 
+Kevin Balmores
+Ed Benedict
+Hermart Torreon
+James Jone
+Ran mar
+Raymond
+Jason
+Jasbar
+Reyna
+bernard
+Charles
+Dave Querikol
+Eric Constantino
+Gilbert
+Waren Gador
+Benedict Ramirez
+
 <!-- JUST FOR DEMONSTRATION REASONS
 <?php 
   // PROCEDURAL    
@@ -62,3 +84,36 @@ function testAPI(type){
 // ABSTRACTED
 
 testAPI('www.test.com', HTTPMethod.Get); // Invocation
+
+
+//
+
+
+<?php 
+   class Fruit{
+        //Properties
+        public $name;
+        public $color;
+
+
+        //Methods
+        function setName($name){
+            $this->name= $name;
+        }
+
+        function getName(){   
+            return $this->name;
+        }
+   }
+
+   $apple = new Fruit();
+   $banana = new Fruit();
+   $apple->setName('Apple');
+   $banana->setName('Banana');
+
+   echo $apple->getName();
+   echo "<br>";
+   echo $banana->getName();
+   // Call using browser when the user clicks on something
+   // Call or invoke a funciton inside of our script or code 
+?>

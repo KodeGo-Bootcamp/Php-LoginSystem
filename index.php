@@ -41,35 +41,6 @@ to some programming languages. </p>
 </ol>
 
 
-<?php 
-   class Fruit{
-        //Properties
-        public $name;
-        public $color;
-
-
-        //Methods
-        function setName($name){
-            $this->name= $name;
-        }
-
-        function getName(){   
-            return $this->name;
-        }
-   }
-
-   $apple = new Fruit();
-   $banana = new Fruit();
-   $apple->setName('Apple');
-   $banana->setName('Banana');
-
-   echo $apple->getName();
-   echo "<br>";
-   echo $banana->getName();
-   // Call using browser when the user clicks on something
-   // Call or invoke a funciton inside of our script or code 
-?>
-
 
 <!-- 
 <script>
@@ -87,6 +58,45 @@ include_once 'includes/FirstClass.php';
 
 
 <hr>
+
+<h2>CONSTRUCTS</h2>
+
+<?php 
+   class Fruit{
+        //Properties
+        public $name;
+        public $color;
+
+
+        //Methods
+        function __construct($name){
+            $this->name= $name;
+        }
+
+        function getName(){   
+            return $this->name;
+        }
+   }
+
+   $apple = new Fruit('Apple');
+   $banana = new Fruit("Banana");
+   
+   echo $apple->getName();
+   echo "<br>";
+   echo $banana->getName();
+   // Call using browser when the user clicks on something
+   // Call or invoke a funciton inside of our script or code 
+?>
+
+
+<h3>CODING CHALLENGE</h3>
+<?php
+
+// ECHO an instance of CAR OBJECT HERE
+
+
+
+?>
 
 </body>
 </html>
