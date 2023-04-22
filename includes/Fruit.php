@@ -15,11 +15,18 @@ class Fruit {
 
 
 // create a class Person
-// create a method eatFruit
-
+class Person extends Fruit {
 // create a property for protected person name
+    protected $person = "Jerome";
 
+// create a method eatFruit
+    public function eatFruit(){
+        $a = "Hi I am" . $this->person . "and my favorite fruit is" . $this->name . ".";
+    }
+   
 // declare and return a declared and initialzed variable $eat with the strings "Hi I am" <personanme> and my favorite fruit is <fruitname>.
+}
+
 
 
 
