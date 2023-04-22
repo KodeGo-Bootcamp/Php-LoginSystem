@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+include_once 'includes/header.php';
+include 'includes/autoloader.inc.php';
+?>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +13,7 @@
     <title>Object Oriented Programming - PHP</title>
 </head>
 
-<body>
+<body> -->
 
     <h1>OOP - Object Oriented Programming with PHP</h1>
 
@@ -55,7 +60,7 @@
     echo "<hr>";
     echo "<h2>FirstClass Example</h2>";
     echo "<br>";
-    include_once 'includes/FirstClass.php';
+    include_once 'classes/FirstClass.class.php';
     ?>
 
 
@@ -97,7 +102,7 @@
     <h3>CODING CHALLENGE</h3>
     <?php
     //connection from the Construct.php
-    include_once 'includes/Construct.php';
+    include_once 'classes/Construct.php';
 
     // ECHO an instance of CAR OBJECT HERE
     echo $bmw->getModel();
@@ -110,7 +115,7 @@
 
     <h2>Visibiliy and Inheritance</h2>
     <?php
-    include_once 'includes/Player.php';
+    include_once 'classes/Player.php';
 
     $pet01 = new Pet();
     $player01First = new PlayerName();
@@ -129,7 +134,7 @@
     echo "<h3>CODING CHALLENGE VISIBILITY AND INHERITANCE</h3>";
 
     // Connect Fruits.php 
-    include_once 'includes/Fruit.php';
+    include_once 'classes/Fruit.php';
 
     // create an object from the class Person.
     $person = new Person();
@@ -145,7 +150,7 @@
 
   <?php
 
-include_once 'includes/Person.php';
+include_once 'classes/Person.php';
   $person2 = new Person2("rod", "green",40);
 //   echo $person2->getName();
 //   echo $person2->getEyeColor();
@@ -159,7 +164,7 @@ include_once 'includes/Person.php';
     echo "<h3>Construct Destruct Coding Challenge</h3>";
 
     // connect index.php to Personality.php
-  include_once 'includes/Personality.php';
+  include_once 'classes/Personality.php';
 
     // Create new instance of the Personality class
   //  $Personality = new Personality("Cheerful", "Comic", "Happy");
@@ -171,7 +176,7 @@ include_once 'includes/Person.php';
 
   <h2>DELETING OBJECTS IN OOP</h2>
   <?php 
-    include_once 'includes/Delete.php';
+    include_once 'classes/Delete.php';
    // $object = new DeleteObject();
   // unset($object);
    // echo $object->getProperty();
@@ -196,9 +201,9 @@ include_once 'includes/Person.php';
    <p>We want to learn when to use static properties and methods over using objects that we can create our classes.</p>     
 
     <?php
-      include_once 'includes/Static.php';
-      include_once 'includes/User.php';
-      include_once 'includes/Static-Procedural.php';
+      include_once 'classes/Static.php';
+      include_once 'classes/User.php';
+      include_once 'classes/Static-Procedural.php';
     //   $username = new Person3('rod', 'blue', 40);
     //   $username->setName('diguy');
      
@@ -223,6 +228,13 @@ include_once 'includes/Person.php';
     ?>
 
 
+<hr>
+<h2>Autoload and Namespaces</h2>
+<?php 
+$owner1 = new Owner\Owner('Rod', 'red', 40);
+echo $owner1->getOwnerName();
+
+?>
 
 </body>
 
