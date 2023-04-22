@@ -173,8 +173,19 @@ include_once 'includes/Person.php';
   <?php 
     include_once 'includes/Delete.php';
     $object = new DeleteObject();
-   unset($object);
+  // unset($object);
     echo $object->getProperty();
+
+   // var_dump($object);
+    
+    echo "<br>";
+
+     if ($object == null){
+         echo "<strong>This is a deleted object</strong>";
+     }else{
+         echo "This object has been instantiated!!";
+     }
+
 
     echo "<br>";
   ?>

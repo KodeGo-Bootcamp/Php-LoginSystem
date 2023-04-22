@@ -2,8 +2,8 @@
 
 class DeleteObject{
     //properties and methods
-    public $data = "This is information stored that we want to set as a property";
-
+    // public $data = "This is information stored that we want to set as a property";
+      public $data = "";
     public function __construct() {
         echo "We want this information to automatically called when the class is instantiated.!!! <br>";
     }
@@ -17,6 +17,8 @@ class DeleteObject{
     }
 
     public function __destruct(){
-        echo "<br> This is the end of our deleteObject class!";
+     echo "<br> This is the end of our deleteObject class!";
+        
+       
     }
 }
