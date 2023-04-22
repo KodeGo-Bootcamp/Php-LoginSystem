@@ -98,8 +98,25 @@ include_once 'includes/Construct.php';
 echo $bmw->getModel();
 echo "<br>";
 echo $bmw->getColor();
+?>
+
+
+<hr>
+
+<h2>Visibiliy and Inheritance</h2>
+<?php
+include_once 'includes/Player.php';
+
+$pet01 = new Pet();
+$player01First = new PlayerName();
+
+echo $pet01->owner(); // method owner from the PET class is private -> That is why we are getting a uncaught error > This  will be solved if we set private to public access modifier.
+
+//echo $player01First->petOwner();
+ 
 
 ?>
+
 
 </body>
 </html>

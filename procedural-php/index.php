@@ -797,6 +797,16 @@ include_once 'header.php';
 
      
     </section>
+    <?php
+        include_once '../includes/Player.php';
+
+        $pet01 = new Pet();
+
+        echo $pet01->owner(); // method owner from the PET class is private -> That is why we are getting a uncaught error
+
+    ?>
+
+
         </main>
 
 
