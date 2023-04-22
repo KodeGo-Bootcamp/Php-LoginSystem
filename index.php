@@ -130,7 +130,7 @@
     include_once 'includes/Fruit.php';
 
     // create an object from the class Person.
-    $person = new Person("Eric");
+    $person = new Person();
 
 
     // display output for the favorite food of the person.

@@ -1,7 +1,7 @@
 <?php
 
 // create a class FRUIT
-class Fruit
+class Fruit2
 {
     // create a public property name
     public $name = "apple";
@@ -12,7 +12,7 @@ class Fruit
 
     // function __construct($name)
     // {
-    //     $this->name = $name;
+    //      $this->name = $name;
     // }
 }
 
@@ -21,15 +21,16 @@ class Fruit
 
 
 // create a class Person
-class Person extends Fruit
+class Person extends Fruit2
 {
     // create a property for protected person name
     protected $person = "Jerome";
+    protected $person2 = "Rod";
 
     // create a method eatFruit
     public function eatFruit()
     {
-        $a = "Hi I am" . $this->person . "and my favorite fruit is" . $this->name . ".";
+        $a = "Hi I am" . $this->person2 . "and my favorite fruit is" . $this->name . ".";
         return $a;
     }
 
