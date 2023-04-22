@@ -1,9 +1,14 @@
 <?php
 
-// create a class FRUIT 
-// create a public property name 
+// create a class FRUIT
+class Fruit {
+// create a public property name
+    public $name = "apple";
 // create a  private property color
-// create a protected property weight 
+    private $color = "red";
+// create a protected property weight
+    protected $weight = "1kg";
+}
 
 
 
