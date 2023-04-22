@@ -165,6 +165,19 @@ include_once 'includes/Person.php';
     $Personality = new Personality("Cheerful", "Comic", "Happy");
   
   ?>
+  <br>
+
+<hr> 
+
+  <h2>DELETING OBJECTS IN OOP</h2>
+  <?php 
+    include_once 'includes/Delete.php';
+    $object = new DeleteObject();
+   unset($object);
+    echo $object->getProperty();
+
+    echo "<br>";
+  ?>
 
 </body>
 
