@@ -116,7 +116,9 @@
     $player01First = new PlayerName();
 
     echo $pet01->owner(); // method owner from the PET class is private -> That is why we are getting a uncaught error > This  will be solved if we set private to public access modifier.
-
+    
+    echo "<br>";
+    echo $player01First->favoriteGame();
     //echo $player01First->petOwner();
 
 
