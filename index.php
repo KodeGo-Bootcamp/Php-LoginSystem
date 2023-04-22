@@ -162,7 +162,7 @@ include_once 'includes/Person.php';
   include_once 'includes/Personality.php';
 
     // Create new instance of the Personality class
-    $Personality = new Personality("Cheerful", "Comic", "Happy");
+  //  $Personality = new Personality("Cheerful", "Comic", "Happy");
   
   ?>
   <br>
@@ -172,23 +172,57 @@ include_once 'includes/Person.php';
   <h2>DELETING OBJECTS IN OOP</h2>
   <?php 
     include_once 'includes/Delete.php';
-    $object = new DeleteObject();
+   // $object = new DeleteObject();
   // unset($object);
-    echo $object->getProperty();
+   // echo $object->getProperty();
 
    // var_dump($object);
     
-    echo "<br>";
+    // echo "<br>";
 
-     if ($object == null){
-         echo "<strong>This is a deleted object</strong>";
-     }else{
-         echo "This object has been instantiated!!";
-     }
+    //  if ($object == null){
+    //      echo "<strong>This is a deleted object</strong>";
+    //  }else{
+    //      echo "This object has been instantiated!!";
+    //  }
 
 
-    echo "<br>";
+    // echo "<br>";
   ?>
+
+  <hr>
+
+  <h2>Static Properties and Methods</h2>
+   <p>We want to learn when to use static properties and methods over using objects that we can create our classes.</p>     
+
+    <?php
+      include_once 'includes/Static.php';
+      include_once 'includes/User.php';
+      include_once 'includes/Static-Procedural.php';
+    //   $username = new Person3('rod', 'blue', 40);
+    //   $username->setName('diguy');
+     
+    //   echo $username->getName();
+    //   echo "<br>";
+
+      echo Person3::$drinkingAge;
+      Person3::setDrinkingAge(21);
+      echo "<br>";
+      echo Person3::$drinkingAge;
+
+      echo "<hr>";
+      echo "<h3>Second Example For Constant PI</h3>";
+      echo PI::staticMethod();
+
+
+    //   staticInfo();
+
+   echo $information;
+   //staticInfo('Information test'); // this will not work
+
+    ?>
+
+
 
 </body>
 
