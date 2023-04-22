@@ -234,6 +234,9 @@ include_once 'classes/Person.php';
 $owner1 = new Owner\Owner('Rod', 'red', 40);
 echo $owner1->getOwnerName();
 
+
+$houseAddress = new House('Municipality of Marilao', 23);
+echo $houseAddress->getAddress();
 ?>
 
 </body>
