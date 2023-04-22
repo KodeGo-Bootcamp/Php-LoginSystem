@@ -139,6 +139,21 @@
     echo $person->eatFruit();
     ?>
 
+  <hr> 
+
+  <h2>Constructors Continuation and Destructors</h2>
+
+  <?php
+
+include_once 'includes/Person.php';
+  $person2 = new Person2("rod", "green",40);
+//   echo $person2->getName();
+//   echo $person2->getEyeColor();
+//   echo $person2->getAge();
+
+  
+  
+  ?>
 
 </body>
 
