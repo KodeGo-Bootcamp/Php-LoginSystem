@@ -159,10 +159,10 @@ include_once 'includes/Person.php';
     echo "<h3>Construct Destruct Coding Challenge</h3>";
 
     // connect index.php to Personality.php
-
+  include_once 'includes/Personality.php';
 
     // Create new instance of the Personality class
-  
+    $Personality = new Personality("Cheerful", "Comic", "Happy");
   
   ?>
 
