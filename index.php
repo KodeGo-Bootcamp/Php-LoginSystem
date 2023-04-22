@@ -117,6 +117,19 @@ echo $pet01->owner(); // method owner from the PET class is private -> That is w
 
 ?>
 
+<hr>
+<?php 
+echo "<h3>CODING CHALLENGE VISIBILITY AND INHERITANCE</h3>"
+
+// Connect Fruits.php 
+
+
+// create an object from the class Person.
+
+// display output for the favorite food of the person.
+
+?>
+
 
 </body>
 </html>
