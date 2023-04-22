@@ -22,6 +22,7 @@ class Person extends Fruit {
 // create a method eatFruit
     public function eatFruit(){
         $a = "Hi I am" . $this->person . "and my favorite fruit is" . $this->name . ".";
+        return $a;
     }
    
 // declare and return a declared and initialzed variable $eat with the strings "Hi I am" <personanme> and my favorite fruit is <fruitname>.
