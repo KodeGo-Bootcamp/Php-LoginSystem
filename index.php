@@ -151,6 +151,17 @@ include_once 'includes/Person.php';
 //   echo $person2->getEyeColor();
 //   echo $person2->getAge();
 
+  ?>
+
+<hr>
+  <?php 
+    echo "<hr>";
+    echo "<h3>Construct Destruct Coding Challenge</h3>";
+
+    // connect index.php to Personality.php
+
+
+    // Create new instance of the Personality class
   
   
   ?>

@@ -22,11 +22,11 @@ class Person2{
         $this->age = $newAge;
     }
 
-    public function __destruct(){
-        echo "My Name is {$this->name}.";
-        echo "My EyeColor is {$this->eyeColor}.";
-        echo "My Age is {$this->age}.";
-    }
+    // public function __destruct(){
+    //     echo "My Name is {$this->name}.";
+    //     echo "My EyeColor is {$this->eyeColor}.";
+    //     echo "My Age is {$this->age}.";
+    // }
 
     // public function getname(){
     //     echo "<br>";
