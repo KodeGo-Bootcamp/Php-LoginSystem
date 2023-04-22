@@ -17,7 +17,9 @@ class Personality{
 // Create a  destruct functin to automatically end this script.
     public function __destruct(){
         echo "The 1st personality is {$this->personality1}.";
+        echo "<br>";
         echo "Then, the 2nd one is {$this->personality2}!";
+        echo "<br>";
         echo "Last but not the least, {$this->personality3}.";
     }
 }
