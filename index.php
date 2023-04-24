@@ -1,6 +1,8 @@
 <?php
+declare(strict_types = 1);
 include_once 'includes/header.php';
 include 'includes/autoloader.inc.php';
+
 ?>
 
 <!-- <!DOCTYPE html>
@@ -237,6 +239,27 @@ echo $owner1->getOwnerName();
 
 $houseAddress = new House('Municipality of Marilao', 23);
 echo $houseAddress->getAddress();
+?>
+
+
+<hr>
+<h2>Type Declarations</h2>
+
+<p><strong>NOTE:</strong>
+Type declaration can be sometimes referred to as Type hinting. They are both essentially just the same. 
+</p>
+<?php
+
+$cid = new Person5\Person5();
+
+try{
+  $cid->setName(2);
+  echo $cid->getName();
+}catch (TypeError $e)
+{
+  echo "Error!: " . $e->getMessage();
+}
+
 ?>
 
 </body>
