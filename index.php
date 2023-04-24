@@ -253,7 +253,7 @@ Type declaration can be sometimes referred to as Type hinting. They are both ess
 $cid = new Person5\Person5();
 
 try{
-  $cid->setName(2);
+  $cid->setName('Cid');
   echo $cid->getName();
 }catch (TypeError $e)
 {
@@ -261,6 +261,36 @@ try{
 }
 
 ?>
+
+<hr>
+
+<?php 
+
+// $s1 = ScopeExample1\ScopeExample1::EXAMPLE;
+// $s2 = ScopeExample1\ScopeExample1::test();
+// echo $s1;
+
+
+// $s3 = ScopeExample1\ScopeExample2::anotherTest();
+// echo $s3;
+
+
+$s1 = ScopeExercise\ScopeExample1::EXAMPLE;
+$s2 = ScopeExercise\ScopeExample1::test();
+echo $s1;
+
+
+$s3 = ScopeExercise\ScopeExample2::anotherTest();
+echo $s3;
+?>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 
 </body>
 
