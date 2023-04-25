@@ -44,6 +44,34 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
+        <!--LoginSystem-->
+        <section>
+            <div class="login">
+                <div class="d-flex">
+                    <div class="login__sign-up">
+                        <h4>SIGN UP</h4>
+                        <p>Sign-up Here</p>
+                        <form action="includes/signup.inc.php" method="post">
+                          <input type="text" name="uid" placeholder="Username">
+                          <input type="text" name="pwd" placeholder="Password">
+                          <input type="text" name="pwdrepeat" placeholder="Repeat Password">
+                          <input type="text" name="email" placeholder="E-mail">
+                          <br>
+                          <button type="submit" name="submit">SIGN UP</button>
+                        </form>
+                    </div>
+                    <div class="login__login">
+                        <h4>Login</h4>
+                        <form action="includes/login.inc.php" method="post">
+                          <input type="text" name="uid" placeholder="Username">
+                          <input type="text" name="pwd" placeholder="Password">
+                          <br>
+                          <button type="submit" name="submit">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
