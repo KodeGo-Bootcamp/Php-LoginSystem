@@ -22,13 +22,41 @@ class SignUpController{
     public function emptyInput(){
         $results;
         if(empty($this->$uid || $this->$pwd ||$this->$pwdrepeat || $this->$email)){
-
+            $results = false;
         }
+        else{
+            $results = true;
+        }
+         return $results;
     }
 
-    
+    private function invalidUid(){
+        $results;
+        if(!pregmatch("/^[a-zA-Z0-0]*$/", $this->uid)){
+            $results = false;
+        }else{
+         $results = true;   
+        }
+        return $results;
+    }
 
+    private function invalidEmail(){
+        $results;
+        if(!filter_var($this->email, FILTER_VALIDATE_EMAIL)){
+            $results = false;
+        }else{
+         $results = true;   
+        }
+        return $results;
+    }
+
+    private function pwdMatch(){
+        
+        if($this->pwd !== $this->pwdrepeat){
+            $results = false;
+        }else{
+         $results = true;   
+        }
+        return $results;
+    }
 }
-
-
-
