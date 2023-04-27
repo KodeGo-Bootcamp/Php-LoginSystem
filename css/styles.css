@@ -11319,5 +11319,37 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .login{
   height:100vh;
-  background-color: orangered;
+  background-color: yellow;
+  text-align: center;
 }
+
+.login__container{
+  padding-top:5%;
+  margin: 0;
+}
+
+.login__nav{
+  display: flex;
+  padding: 5%;
+}
+
+.login_nav li{
+  list-style-type:none;
+  margin: 2%;
+}
+
+.login__form--signup input{
+  padding: 2%;
+  text-align: center;
+  margin: 2%;
+
+}
+
+.login__form--login input{
+  padding: 2%;
+  text-align:center;
+  margin: 2%;
+}
+
+
+

@@ -47,11 +47,11 @@
         <!--LoginSystem-->
         <section>
             <div class="login">
-                <div class="d-flex">
+                <div class="d-lg-flex justify-content-evenly login__container">
                     <div class="login__sign-up">
                         <h4>SIGN UP</h4>
                         <p>Sign-up Here</p>
-                        <form action="../includes/signup.inc.php" method="post">
+                        <form class="login__form--signup" action="../includes/signup.inc.php" method="post">
                           <input type="text" name="uid" placeholder="Username">
                           <input type="text" name="pwd" placeholder="Password">
                           <input type="text" name="pwdrepeat" placeholder="Repeat Password">
