@@ -1,7 +1,7 @@
 <?php 
 
     // create a class
-class SignUpController{
+class SignUpController extends SignUp{
     // PROPERTIES
     // create properties related to data we want to grab
 
@@ -19,7 +19,47 @@ class SignUpController{
         $this->email = $email;
     }
 
-    public function emptyInput(){
+    public function signUpUser(){
+        if($this->emptyInput() == false){
+            //Echo  "Empty input!";
+            header("location: ../index.php?error=emptyinput");
+            exit();
+        }
+
+        if($this->invalidUid() == false){
+            //Echo  "Invalid Uid";
+            header("location: ../index.php?error=invaliduid");
+            exit();
+        }
+
+        if($this->invalidEmail() == false){
+            //Echo  "Invalid email!!";
+            header("location: ../index.php?error=invalidemail");
+            exit();
+        }
+
+        if($this->pwdMatch() == false){
+            //Echo  "Invalid email!!";
+            header("location: ../index.php?error=passwordmatch");
+            exit();
+        }
+
+        if($this->pwdMatch() == false){
+            //Echo  "Passwords don't match";
+            header("location: ../index.php?error=passwordmatch");
+            exit();
+        }
+
+        if($this->uidTakenCheck() == false){
+            //Echo  "Username or email have been taken";
+            header("location: ../index.php?error=useroremailtaken");
+            exit();
+        }
+
+        $this->setUser($this->uid,$this->pwd,$this->email);
+    }
+
+    private function emptyInput(){
         $results;
         if(empty($this->$uid || $this->$pwd ||$this->$pwdrepeat || $this->$email)){
             $results = false;
@@ -56,6 +96,18 @@ class SignUpController{
             $results = false;
         }else{
          $results = true;   
+        }
+        return $results;
+    }
+
+
+    // create a function to check uiser id if taken
+    private function uidTakenCheck(){
+        $results;
+        if(!$this->checkUser($this->uid,$this->email)){
+            $results = false;
+        }else{
+            $results = true;
         }
         return $results;
     }
