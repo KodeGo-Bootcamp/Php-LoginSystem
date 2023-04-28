@@ -22,7 +22,7 @@ class SignUp extends Dbh{
         }
 
         $resultCheck;
-        if(!stmt->rowCount() > 0){
+        if(!$stmt->rowCount() > 0){
             $resultCheck = false;
         }else{
             $resultCheck = true;
@@ -33,6 +33,7 @@ class SignUp extends Dbh{
 
     protected function checkUser($uid, $email){
         $stmt = $this->connect()->prepare('SELECT users_uid FROM users WHERE users_uid = ? or users_email = ?;');
+        
         if(!$stmt->execute(array($uid,$email))){
             $stmt = null;
             header("location:../index.php?error?stmtfailed");
@@ -41,7 +42,7 @@ class SignUp extends Dbh{
         $resultCheck;
 
 
-        if(!stmt->rowCount() > 0){
+        if(!$stmt->rowCount() > 0){
             $resultCheck = false;
         }else{
             $resultCheck = true;

@@ -61,7 +61,7 @@ class SignUpController extends SignUp{
 
     private function emptyInput(){
         $results;
-        if(empty($this->$uid || $this->$pwd ||$this->$pwdrepeat || $this->$email)){
+        if(empty($this->uid || $this->pwd ||$this->pwdrepeat || $this->email)){
             $results = false;
         }
         else{
@@ -72,7 +72,7 @@ class SignUpController extends SignUp{
 
     private function invalidUid(){
         $results;
-        if(!pregmatch("/^[a-zA-Z0-0]*$/", $this->uid)){
+        if(!preg_match("/^[a-zA-Z0-9]*$/", $this->uid)){
             $results = false;
         }else{
          $results = true;   
@@ -104,7 +104,7 @@ class SignUpController extends SignUp{
     // create a function to check uiser id if taken
     private function uidTakenCheck(){
         $results;
-        if(!$this->checkUser($this->uid,$this->email)){
+        if($this->checkUser($this->uid, $this->email)){
             $results = false;
         }else{
             $results = true;
