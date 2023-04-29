@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Signup</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -47,8 +50,17 @@
         <!--LoginSystem-->
         <section>
             <div class="login">
-                <div class="d-lg-flex justify-content-evenly login__container">
+                <div class="d-lg-flex justify-content-evenly flex-column login__container">
                     <div class="login__sign-up">
+                        <?php 
+                          if(isset($_SESSION["userid"]))
+                          {
+                         ?>   
+                        <li><a href="#"><?php echo $_SESSION["userid"];?></a><li>
+                        <li><a href="includes/logout.inc.php">LOGOUT</a><li>   
+                        <?php
+                          } else {
+                        ?>
                         <h4>SIGN UP</h4>
                         <p>Sign-up Here</p>
                         <form class="login__form--signup" action="includes/signup.inc.php" method="post">
@@ -69,6 +81,9 @@
                           <button type="submit" name="submit">LOGIN</button>
                         </form>
                     </div>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </section>
